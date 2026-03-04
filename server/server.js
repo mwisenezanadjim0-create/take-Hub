@@ -29,10 +29,7 @@ mongoose.connect(MONGODB_URI)
     .then(() => console.log('✅ Connected to MongoDB'))
     .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
-// Routes placeholder
-app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to Take Hub API', status: 'running' });
-});
+// Routes
 
 // Import Routes
 const authRoutes = require('./routes/authRoutes');
