@@ -10,6 +10,6 @@ services:
       - key: VITE_API_URL
         value: /api
       - key: MONGODB_URI
-        placeholder: "Enter your MongoDB Atlas connection string"
+        sync: false
       - key: JWT_SECRET
         generateValue: true
