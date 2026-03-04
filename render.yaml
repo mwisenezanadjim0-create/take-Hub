@@ -1,6 +1,7 @@
 services:
   - type: web
     name: take-hub
+    plan: free
     env: node
     buildCommand: npm install && npm run build
     startCommand: npm start
